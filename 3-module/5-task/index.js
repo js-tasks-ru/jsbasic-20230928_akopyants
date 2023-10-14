@@ -1,3 +1,7 @@
 function getMinMax(str) {
-  // ваш код...
+  const filteredString = str.split(' ').filter(item => !isNaN(item));
+  const min = Math.min(...filteredString);
+  const max = Math.max(...filteredString);
+
+  return { min, max };
 }

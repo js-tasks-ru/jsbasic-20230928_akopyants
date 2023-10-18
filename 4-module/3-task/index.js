@@ -9,7 +9,7 @@ function highlight(table) {
         status.dataset.available === "true" ? "available" : "unavailable"
       );
     } else {
-      row.setAttribute("hidden", true);
+      row.hidden = true;
     }
 
     if (+age.textContent < 18) {

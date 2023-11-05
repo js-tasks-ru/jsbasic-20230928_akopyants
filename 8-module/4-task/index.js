@@ -175,7 +175,7 @@ export default class Cart {
   }
 
   changeModalProductInfo(item) {
-    if (this.isModalOpen()) {
+    if (item && this.isModalOpen()) {
       let productId = item.product.id;
       let modalBody = document.querySelector(".modal__body");
       let productCount = modalBody.querySelector(`[data-product-id="${productId}"] .cart-counter__count`);

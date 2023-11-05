@@ -22,6 +22,7 @@ export default class Cart {
         }
       });
 
+      
       if (!found) {
         this.cartItems.push({ product, count: 1 });
       }

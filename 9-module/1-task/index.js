@@ -5,6 +5,3 @@ export default function promiseClick(button) {
     });
   }, { once: true });
 }
-
-promiseClick(button)
-  .then((event) => console.log(event)); 

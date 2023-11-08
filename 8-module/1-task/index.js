@@ -39,7 +39,7 @@ export default class CartIcon {
   }
 
   updatePosition() {
-    if (this.elem) {
+    if (this.elem.clientWidth) {
       let initialTopCoord = this.elem.getBoundingClientRect().top + window.scrollY;
       let leftIndent = Math.min(
         document.querySelector('.container').getBoundingClientRect().right + 20,
